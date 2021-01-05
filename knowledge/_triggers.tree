@@ -1,0 +1,15 @@
+triggers
+	; Prizes kw:"конкурс//розыгрыш"
+	; Regional kw:"Анап//Горгиппи//Витязево"
+	; Topical kw:"прода(м|е)// обмен//куплю//попутчик//сда(ю|м|дим|ется)" ignore-case:<t>
+	Prizes kw:"Ctulhu"
+	Regional kw:"twas"
+	Topical kw:"прода(м|е)" ignore-case:<t>
+	
+
+
+	
+
+
+	
+	

@@ -1,0 +1,13 @@
+Options +FollowSymLinks
+RewriteEngine On
+
+# Run Php without filename extension
+RewriteCond %{REQUEST_FILENAME} !-d
+RewriteCond %{REQUEST_FILENAME}.php -f
+RewriteRule ^(.*)$ $1.php
+
+Redirect /index.html /anapa.html
+
+<IfModule mod_mime.c>
+  AddType text/plain .tree
+</IfModule>
