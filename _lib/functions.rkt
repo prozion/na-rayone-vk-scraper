@@ -147,16 +147,6 @@
 (define-catch (vk? item)
   ($ vk item))
 
-(define-catch (get-entity-parameter entity-id parameter-name entities)
-  (let* ((entity (and entities (@id entity-id entities))))
-    (and entity (hash-ref* entity parameter-name #f))))
-
-(define (get-vk-image p)
-  (let* ((img-urls ($ img-urls p))
-        (video-img-urls ($ video-img-urls p))
-        (img-url (or ($ 3x img-urls) ($ 3x-link img-urls) ($ 3x video-img-urls) ($ 3x_first_frame video-img-urls) ($ doc img-urls))))
-    img-url))
-
 (define (get-entities
             tree-file-path
             #:derived (derived (λ (x) (or
@@ -465,23 +455,11 @@
       filename
       #f)))
 
-; в частности для прибавления приставки "Паркран" при именовании паркранов
 (define-catch (get-source-title p c (default-title ""))
   (or
     (and
       c
-      (let* ((name (get-name c))
-            (name-prefix ($ +name-prefix c))
-            (name-prefix (if name-prefix (namefy name-prefix) ""))
-            (name-prefix-len (string-length name-prefix))
-            (name-already-prefixed? (and
-                                      (>= (string-length name) (string-length name-prefix))
-                                      (equal? name-prefix (substring name 0 (string-length name-prefix)))))
-            (name (if (or name-already-prefixed? (not name-prefix))
-                      name
-                      (str name-prefix name)))
-            (name (or name default-title)))
-        name))
+      (or (get-name c) default-title))
     (format "public~a" ($ gid p))))
 
 (define (get-sitemap #:only-visible-pages? (only-visible? #f))
@@ -495,10 +473,3 @@
 
 (define-catch (cur-y-m-d)
   (format "~a-~a-~a" (current-year) (current-month) (current-day)))
-
-(define-catch (cached-alias->id alias)
-  (persistent h-galias-gid)
-  (persistent h-ualias-uid)
-  (let* (
-        (h-alias-id (hash-union (h-galias-gid) (h-ualias-uid))))
-    (hash-ref* h-alias-id alias)))

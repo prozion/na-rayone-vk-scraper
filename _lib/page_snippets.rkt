@@ -5,7 +5,6 @@
 (require tabtree/template-functions)
 (require "functions.rkt")
 (require "globals.rkt")
-(require "geography.rkt")
 
 (provide (all-defined-out))
 
@@ -175,7 +174,7 @@ NAV
 IMAGE
                       (let* ((img-urls ($ img-urls p))
                             (video-img-urls ($ video-img-urls p))
-                            (img-url (or ($ 3x img-urls) ($ 3x-link img-urls) ($ 4x video-img-urls) ($ 4x_first_frame video-img-urls) ($ doc img-urls)))
+                            (img-url (or ($ 3x img-urls) ($ 3x-link img-urls) ($ largest img-urls) ($ 4x video-img-urls) ($ 4x_first_frame video-img-urls) ($ doc img-urls)))
                             (img-url (or img-url "img/ag_stub_1.jpg")))
                         (if img-url
                           (format "<img src=\"~a\" />" img-url)
