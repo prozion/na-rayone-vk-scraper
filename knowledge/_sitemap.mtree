@@ -10,5 +10,25 @@
 			changefreq:daily
 			n:1
 		<.>
+		Dzau
+			name:"Владикавказ" 
+			title:"Объявления Владикавказа"
+			description:"Агрегатор объявлений по городу Владикавказ"
+			keywords:"агрегатор объявлений"
+			h1:"Объявления Владикавказа"
+			path:dzau.html 
+			changefreq:daily
+			n:2
+		<.>
+		Taganrog
+			name:"Таганрог" 
+			title:"Объявления Таганрога"
+			description:"Агрегатор объявлений по Таганрогу"
+			keywords:"агрегатор объявлений"
+			h1:"Объявления Таганрога"
+			path:taganrog.html 
+			changefreq:daily
+			n:3
+		<.>
 
 		

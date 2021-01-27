@@ -413,7 +413,8 @@
                               (pushr res (mark-post-text-with post "<b>" "</b>" #:marked-text m?))
                               res)))
                       (current-trigger
-                        (let* ((m? (match-words? (remove-hashtags ($ text post)) (get-trigger-words current-trigger #:aliases trigger-aliases #:fallback-value #f))))
+                        (let* (
+                              (m? (match-words? (remove-hashtags ($ text post)) (get-trigger-words current-trigger #:aliases trigger-aliases #:fallback-value #f))))
                           (if m?
                             (pushr res (mark-post-text-with post "<b>" "</b>" #:marked-text m?))
                             res)))

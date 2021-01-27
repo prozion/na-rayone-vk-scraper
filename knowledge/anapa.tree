@@ -1,9 +1,9 @@
 группы_с_объявлениями
 	местные
-		анонсы +kw:`(++ Topical Events Local)`
+		анонсы +kw:`(++ Topical Events Anapa)`
 			Анапа_Афиша vk:vk.com/anapaafisha u:2243
 			Афиша_Анапы vk:vk.com/kudavanapa u:8147
-		барахолки +kw:`(++ Prizes Local Topical Transport)`
+		барахолки +kw:`(++ Prizes Anapa Topical Transport)`
 			; Анапа_Do_Афиша vk:vk.com/anapado u:853 ; Перепосты с Юлы
 			Анапа_барахолка_1 vk:vk.com/anapa_kupi_proday u:889
 			Анапа_барахолка_2 vk:vk.com/baraxolka_v_anape u:5393
@@ -19,7 +19,7 @@
 			Объявления_Анапа vk:vk.com/anapik u:10563
 			Объявления_Анапа_Барахолка_1 vk:vk.com/anapa_board u:1557
 			Объявления_Анапа_Барахолка_2 vk:vk.com/anapa23 u:1181
-		городские_паблики +kw:`(++ Events Prizes Topical (** Ads Local))`
+		городские_паблики +kw:`(++ Events Prizes Topical (** Ads Anapa))`
 			Анапа vk:vk.com/anapatuta u:52011
 			Анапа_город_моря vk:vk.com/seaoz u:7444
 			Анапа_Новости vk:vk.com/anapa24com u:7111
@@ -38,26 +38,26 @@
 				Новая_Анапа vk:vk.com/novayaanapa u:1301
 				Новости_Анапы vk:vk.com/anapa.media u:636
 				Сейчас_Анапа_Новости vk:vk.com/news.anapa u:2289
-		доски_объявлений +kw:`(++ Prizes Local Topical Transport (** Ads Local))`
+		доски_объявлений +kw:`(++ Prizes Anapa Topical Transport (** Ads Anapa))`
 			Анапа_объявления vk:vk.com/announcement_of_anapa u:6367
 			Барахолка_Original vk:vk.com/baraxolka_anapaa u:2085
 			Объявления_Анапа vk:vk.com/doska_anapa u:2132
 			Подслушано_Анапа_барахолка vk:vk.com/anapa_123 u:11894
 			AnapaNet vk:vk.com/anapanet u:25391
-			заспамленные_доски_объявлений +kw:`(** (++ Topical Prizes Transport Ads) Local)`
+			заспамленные_доски_объявлений +kw:`(** (++ Topical Prizes Transport Ads) Anapa)`
 				Барахолка_и_объявления_Анапа vk:vk.com/club49512331 u:5368
 				Город_курорт_Анапа vk:vk.com/anapacity_com u:4612
 			lost_and_found
 				Потеряшки_Новороссийск_Геленджик_Анапа_Краснодар vk:vk.com/public201823381 u:347
 				Потерянные_домашние_любимцы_Анапа vk:vk.com/club193911757 u:98
 				Бюро_находок_в_Анапе vk:vk.com/nahodkavanape u:488
-		подслушано +kw:`(++ Events Prizes Topical Transport (** Ads Local))`
+		подслушано +kw:`(++ Events Prizes Topical Transport (** Ads Anapa))`
 			Анонимная_Анапа vk:vk.com/anapa.life u:12540
 			ПВА_Подслушано_в_Анапе vk:vk.com/pva_anapa u:58159
 			Подслушано_Анапа vk:vk.com/overhear_anapa u:11259
 			Подслушано_Анапа_Горгиппия_Морская_и_Сухопутная vk:vk.com/podslushano.gorgippiya u:14250
 			Подслушано_в_Анапе vk:vk.com/podslushano_anapa u:4561
-		работа +kw:Local
+		работа +kw:Anapa
 			Объявления_Работа_в_Анапе vk:vk.com/workanapa u:19622
 			Работа_в_Анапе vk:vk.com/public68413251 u:18342
 			Шабашка_Анапа_Витязево vk:vk.com/anaparabot u:16314
@@ -66,7 +66,7 @@
 			Анапа_Регион vk:vk.com/trk_anaparegion u:5299
 			Блокнот_Анапа vk:vk.com/bloknot_anapa u:7767
 			Независимая_газета_Анапа vk:vk.com/gazeta_anapa u:4664
-		тематические_группы +kw:`(++ Prizes Topical Transport (** Ads Local))`
+		тематические_группы +kw:`(++ Prizes Topical Transport (** Ads Anapa))`
 			авто
 				Анапа_Авто vk:vk.com/anapa_car u:1132
 			недвижимость
@@ -95,7 +95,7 @@
 			церкви
 				Храм_Серафима_Саровсого_Анапа vk:vk.com/anapaserafim u:1716
 				Храм_Игнатия_Брянчанинова_Супсех_Анапа vk:vk.com/hramsupseh u:274
-	региональные +kw:Local
+	региональные +kw:Anapa
 		Попутчики_Анапа_Джугба vk:vk.com/anapa.relax u:713
 		Попутчики_довезу vk:vk.com/southern_traveler u:2165
 		группы_объявлений

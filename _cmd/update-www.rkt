@@ -19,12 +19,18 @@
 
 (persistent h-galias-gid)
 (persistent anapa-posts)
+(persistent dzau-posts)
+(persistent taganrog-posts)
 
 (set-access-token ($ access_token vk/postagg3_1))
 
 (define anapa.tree "../knowledge/anapa.tree")
+(define dzau.tree "../knowledge/dzau.tree")
+(define taganrog.tree "../knowledge/taganrog.tree")
 
 (define anapa-items (get-entities anapa.tree))
+(define dzau-items (get-entities dzau.tree))
+(define taganrog-items (get-entities taganrog.tree))
 
 (define PAGES (get-sitemap))
 
@@ -36,6 +42,18 @@
         #:ignore-with-status #t
         #:ignore-sleepy #t
         #:read-depth 42)
+    (cache-posts
+        #:source (list dzau.tree)
+        #:write-to-cache (string-append CACHE_DIR "/dzau_posts.rktd")
+        #:ignore-with-status #t
+        #:ignore-sleepy #t
+        #:read-depth 12)
+    (cache-posts
+        #:source (list taganrog.tree)
+        #:write-to-cache (string-append CACHE_DIR "/taganrog_posts.rktd")
+        #:ignore-with-status #t
+        #:ignore-sleepy #t
+        #:read-depth 12)
   #t))
 
 (define-catch (update-page page_id #:note (note "") #:template (template-name #f) #:gen-ext (gen-ext "html"))
@@ -65,4 +83,28 @@
                     ))
 (update-page 'Anapa #:note "Объявления Анапы" #:template "news")
 
+(set! news_cards (make-cards
+                    (filter-posts
+                        (dzau-posts)
+                        #:entities dzau-items
+                        #:within-days WITHIN_DAYS
+                        #:min-symbols MIN_SYMBOLS)
+                    #:entities dzau-items
+                    #:max-brs MAX_BRS
+                    ))
+(update-page 'Dzau #:note "Объявления Владикавказа" #:template "news")
+
+(set! news_cards (make-cards
+                    (filter-posts
+                        (taganrog-posts)
+                        #:entities taganrog-items
+                        #:within-days WITHIN_DAYS
+                        #:min-symbols MIN_SYMBOLS)
+                    #:entities taganrog-items
+                    #:max-brs MAX_BRS
+                    ))
+(update-page 'Taganrog #:note "Объявления Таганрога" #:template "news")
+
 (--- (format "~a Конец компиляции~n~n" (timestamp)))
+
+(get-url "http://losikovik.nasevere51.ru/updater.php")
