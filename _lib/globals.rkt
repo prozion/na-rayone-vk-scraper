@@ -20,4 +20,4 @@
 
 ; cache directory for persistent data:
 ; (define CACHE_DIR "_cache")
-(define CACHE_DIR "/var/tmp/projects/na_anape/_cache")
+(define CACHE_DIR "/var/cache/projects/na_rayone")
