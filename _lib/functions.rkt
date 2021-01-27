@@ -378,7 +378,7 @@
   (let* (
         (trigger-aliases
           (let* (
-                (triggers ($3 triggers (parse-tab-tree "../knowledge/_triggers.tree")))
+                (triggers (get-leaves (parse-tab-tree "../knowledge/_triggers.tree")))
                 (trigger_id_values (for/hash ((trigger triggers)) (values ($ id trigger) ($ kw trigger)))))
                             trigger_id_values ))
         ; filter by publication date

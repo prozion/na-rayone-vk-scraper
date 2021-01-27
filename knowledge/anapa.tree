@@ -48,6 +48,8 @@
 				Барахолка_и_объявления_Анапа vk:vk.com/club49512331 u:5368
 				Город_курорт_Анапа vk:vk.com/anapacity_com u:4612
 			lost_and_found
+				Потеряшки_Новороссийск_Геленджик_Анапа_Краснодар vk:vk.com/public201823381 u:347
+				Потерянные_домашние_любимцы_Анапа vk:vk.com/club193911757 u:98
 				Бюро_находок_в_Анапе vk:vk.com/nahodkavanape u:488
 		подслушано +kw:`(++ Events Prizes Topical Transport (** Ads Local))`
 			Анонимная_Анапа vk:vk.com/anapa.life u:12540
@@ -58,7 +60,7 @@
 		работа +kw:Local
 			Объявления_Работа_в_Анапе vk:vk.com/workanapa u:19622
 			Работа_в_Анапе vk:vk.com/public68413251 u:18342
-			Шабашка_Анапа_Витязево vk:vk.com/anaparabot u:16314 
+			Шабашка_Анапа_Витязево vk:vk.com/anaparabot u:16314
 		сми +kw:`(++ Events Topical)`
 			; Анапа.инфо vk:vk.com/anapanews u:8739 ; редко, репосты
 			Анапа_Регион vk:vk.com/trk_anaparegion u:5299
@@ -72,6 +74,14 @@
 				Недвижимость_Анапа vk:vk.com/nedvigimoctanapa u:736
 				Недвижимость_в_Анапе vk:vk.com/nedvizhimost_vanape u:1979
 				Сдам_сниму_продам_жилье_в_Анапе vk:vk.com/sdamsnimyanapa u:4294
+				Снять_жилье_в_Анапе_Анапа_Аренда_квартиры vk:vk.com/kvartiruvanape u:25130
+				Жилье_Анапа vk:vk.com/anapatut u:67410
+				Жилье_в_Анапе vk:vk.com/anapa_zhilye_v_anape u:60877
+				Anapaa.ru vk:vk.com/anapaaru u:45336
+				Крым_Анапа_Геленджик_Сочи_Абхазия_Жилье_у_моря vk:vk.com/zhiznkrasiva u:7039
+				Жилье_Анапа_Сочи_Витязево_Адлер_Отдых_2021 vk:vk.com/gostevoy_dom_anapa u:21820
+				Анапа_Снять_жилье_в_Анапе vk:vk.com/anapa_rooms u:8387
+				Недвижимость_Анапа_Новороссийск_Геленджик_Сочи vk:vk.com/nedvigimost_anapa_novoross u:4794
 			тц_и_кинотеатры
 				Кинотеатр_мир_кино vk:vk.com/mirkinoanapa u:5124
 			районы
@@ -84,8 +94,10 @@
 				Анапа_в_пути vk:vk.com/anapavputi u:2296
 			церкви
 				Храм_Серафима_Саровсого_Анапа vk:vk.com/anapaserafim u:1716
+				Храм_Игнатия_Брянчанинова_Супсех_Анапа vk:vk.com/hramsupseh u:274
 	региональные +kw:Local
 		Попутчики_Анапа_Джугба vk:vk.com/anapa.relax u:713
 		Попутчики_довезу vk:vk.com/southern_traveler u:2165
-		группы_объявлений 
+		группы_объявлений
 			Автобарахолка_Анапа_Темрюк_Новороссийск vk:vk.com/avtomarket23 u:8195
+
