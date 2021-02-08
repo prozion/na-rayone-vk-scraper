@@ -291,6 +291,7 @@
                               (get-wall-posts group-id
                                   #:limit limit
                                   #:break-if-error #f
+                                  #:filtered-by "all"
                                   #:success-display success-display
                                   #:on-closed-wall on-closed-wall
                                   #:do-when-error (λ (err)
