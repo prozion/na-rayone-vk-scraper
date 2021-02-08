@@ -9,7 +9,8 @@ function load_page($filename, $writedir) {
 }
 
 load_page("anapa.html", "");
-load_page("dzau.html", "");
-load_page("taganrog.html", "");
+// load_page("dzau.html", "");
+// load_page("taganrog.html", "");
+load_page("shebekino.html", "");
 
 ?>

@@ -125,7 +125,7 @@
                     #:max-brs MAX_BRS
                     ))
 (update-page 'Shebekino #:note "Объявления Шебекино" #:template "news")
-; (-s (write-file (format "~a/index.html" SERVER-PATH) (process-html-template "../_templates/index.thtml" #:tabtree-root "../_knowledge" #:namespace ns))
+(-s (write-file (format "~a/index.html" SERVER-PATH) (process-html-template "../_templates/index.thtml" #:tabtree-root "../_knowledge" #:namespace ns))
 
 (--- (format "~a Конец компиляции~n~n" (timestamp)))
 
