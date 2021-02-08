@@ -418,7 +418,7 @@
                           (if m?
                             (pushr res (mark-post-text-with post "<b>" "</b>" #:marked-text m?))
                             res)))
-                      (else #t)))))
+                      (else res)))))
         ; exclude reposts
         (posts (filter-not (λ (x) ($ repost? x)) posts))
         ; filter by text properties
