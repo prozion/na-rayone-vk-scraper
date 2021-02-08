@@ -36,7 +36,7 @@
 (define shebekino-items (get-entities shebekino.tree))
 
 (define PAGES (get-sitemap))
-(define SERVER-PATH "../../racket_server/pages/nasevere")
+(define SERVER-PATH "../../racket_server/pages/na_rayone")
 
 (define-catch (update-cache)
   (parameterize ((Name-id-hash (h-galias-gid)))
@@ -92,6 +92,7 @@
                     #:max-brs MAX_BRS
                     ))
 (update-page 'Anapa #:note "Объявления Анапы" #:template "news")
+; (-s (copy-file "../www/anapa.html" (format "~a/anapa.html" SERVER-PATH)))
 
 ; (set! news_cards (make-cards
 ;                     (filter-posts
@@ -125,7 +126,7 @@
                     #:max-brs MAX_BRS
                     ))
 (update-page 'Shebekino #:note "Объявления Шебекино" #:template "news")
-(-s (write-file (format "~a/index.html" SERVER-PATH) (process-html-template "../_templates/index.thtml" #:tabtree-root "../_knowledge" #:namespace ns)))
+; (-s (copy-file "../www/shebekino.html" (format "~a/shebekino.html" SERVER-PATH)))
 
 (--- (format "~a Конец компиляции~n~n" (timestamp)))
 
