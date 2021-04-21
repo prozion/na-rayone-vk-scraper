@@ -72,13 +72,13 @@
   (let* ((page-id-string (string-downcase (->string page-id)))
         (template-name (or template-name page-id-string))
         (processed-template (process-html-template (format "../_templates/~a.t" template-name) #:tabtree-root "../knowledge" #:namespace ns)))
-    (write-file (format "../www/~a.~a" page-id-string gen-ext) processed-template)))
+    (write-file (format "~a/~a.~a" SERVER_DIR page-id-string gen-ext) processed-template)))
 
 ;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
 
 (--- (format "~a: Обновляем контент сайта" (timestamp)))
 
-(update-cache)
+; (update-cache)
 
 (--- "Компилируем страницы сайта")
 
