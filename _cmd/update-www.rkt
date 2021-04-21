@@ -1,8 +1,8 @@
 #lang racket
 
 (require odysseus)
-(require odysseus/read/vk)
-(require odysseus/write/csv)
+(require odysseus/api/vk)
+(require odysseus/api/csv)
 (require tabtree)
 (require tabtree/html)
 (require (file "/home/denis/.private/APIs.rkt"))
