@@ -5,8 +5,8 @@
 (require tabtree)
 (require tabtree/utils)
 (require tabtree/template-functions)
-(require odysseus/read/vk)
-(require odysseus/write/csv)
+(require odysseus/api/vk)
+(require odysseus/api/csv)
 
 (require (file "/home/denis/.private/APIs.rkt"))
 

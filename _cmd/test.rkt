@@ -2,7 +2,7 @@
 
 (require odysseus)
 (require tabtree)
-(require odysseus/read/vk)
+(require odysseus/api/vk)
 (require json)
 
 (require (file "/home/denis/.private/APIs.rkt"))

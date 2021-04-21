@@ -2,7 +2,7 @@
 
 (require odysseus)
 (require tabtree)
-(require odysseus/read/vk)
+(require odysseus/api/vk)
 (require racket/serialize)
 (require compatibility/defmacro)
 (require (for-syntax racket/match racket/syntax racket/format))
