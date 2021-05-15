@@ -36,7 +36,6 @@
 (define shebekino-items (get-entities shebekino.tree))
 
 (define PAGES (get-sitemap))
-(define SERVER-PATH "../../racket_server/pages/na_rayone")
 
 (define-catch (update-cache)
   (parameterize ((Name-id-hash (h-galias-gid)))

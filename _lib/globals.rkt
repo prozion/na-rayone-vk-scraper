@@ -20,5 +20,5 @@
 
 ; cache directory for persistent data:
 ; (define CACHE_DIR "_cache")
-(define CACHE_DIR "/var/tmp/projects/na-rayone")
-(define SERVER_DIR "/var/www/html/pages/na_rayone")
+(define CACHE_DIR "/var/cache/projects/losikovik")
+(define SERVER_DIR "/var/www/html/losikovik")
